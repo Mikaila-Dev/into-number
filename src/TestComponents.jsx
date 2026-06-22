@@ -78,9 +78,9 @@ export function TestComponents() {
 };
   return (
     <div className="main-container" >
-      <h1>{result}</h1>
-      <input type="text" value={allNames} placeholder="Write..." onChange={(e) => setAllNames(e.target.value)}/><br />
-      <button onClick={hello}>Add</button>
+      <div className="display-result">{result}</div>
+      <input className="input-fiel" type="text" value={allNames} placeholder="Write..." onChange={(e) => setAllNames(e.target.value)}/><br />
+      <button className="c-btn" onClick={hello}>Add</button>
     </div>
   );
 }
