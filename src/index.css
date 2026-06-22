@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+@media(min-width: 420px){
 body {
     font-family: "poppins";
     display: flex;
@@ -18,12 +19,12 @@ body {
     justify-content: center;
     align-items: center;
     width: 400px; 
-    height: 600px;
+    min-height: 520px;
     border: 2px solid #7575753b;
     background: #5e5e5e10;
     backdrop-filter: blur(100px);
     border-radius: 7px;
-    margin: 0 10px;
+    margin: 0 auto;
 }
 .display-result {
     width: 80%;
@@ -78,10 +79,75 @@ body {
   background: #0059ffb6;
   color: #ffffffc2;
 }
-@media(max-width: 420px){
-    .main-container {
-        width: 370px;
-        height: 100vh;
-        margin: 0 auto;
-    }
+} 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+body {
+    font-family: "poppins";
+    background-color: #141414;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; 
+    min-height: 100vh;
+    border: 2px solid #7575753b;
+    background: #5e5e5e10;
+    backdrop-filter: blur(100px);
+    border-radius: 7px;
+    margin: 0px auto;
+}
+.display-result {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff65;
+    backdrop-filter: blur(50px);
+    color: #0059ff;
+    font-size: 1.3rem;
+    overflow: hidden;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    border-radius: 15px;
+    border: 2px solid #ffffffe3;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.input-fiel {
+    width: 80%;
+    height: 60px;
+    border-radius: 15px;
+    border: 2px solid #0059ff77;
+    display: flex;
+    padding: 0 10px;
+    position: absolute;
+    top: 270px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #141414;
+}
+.input-fiel:focus {
+    outline: none;
+    border: 2px solid #0059ff;
+}
+.c-btn {
+    width: 80%;
+    height: 60px;
+    border-radius: 15px;
+    background: #0059ff;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: #ffffffee;
+    position: absolute;
+    top: 400px;
+    border: 2px solid #ffffff00;
+    backdrop-filter: blur(50px);
 }
